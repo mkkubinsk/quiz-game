@@ -6,7 +6,7 @@ question_bank = []
 
 for question_dict in question_data:
     # print(question_dict)
-    question = Question(text=question_dict['text'], answer=question_dict['answer'])
+    question = Question(text=question_dict['question'], answer=question_dict['correct_answer'])
     question_bank.append(question)
 
 quiz = QuizBrain(question_bank)
